@@ -8,8 +8,6 @@ import image1 from "../../../assets/images/hero1.png";
 import image2 from "../../../assets/images/hero2.png";
 import image3 from "../../../assets/images/hero3.png";
 import image4 from "../../../assets/images/hero4.png";
-import image5 from "../../../assets/images/hero5.png";
-import image6 from "../../../assets/images/hero6.png";
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -34,7 +32,7 @@ const Hero = () => {
       onSubmit,
     });
 
-  const changeImage = [image1, image2, image3, image4, image5, image6];
+  const changeImage = [image1, image2, image3, image4];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
