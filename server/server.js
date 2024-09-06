@@ -11,6 +11,8 @@ import authRoute from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
+console.log(process.env.MONGO);
+
 const app = express();
 dotenv.config();
 mongoose.set("strictQuery", true);
@@ -29,7 +31,7 @@ const connectMongodb = async () => {
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://fiverr-web.netlify.app"],
+    origin: ["http://localhost:8080"],
     credentials: true,
   })
 );

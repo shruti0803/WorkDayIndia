@@ -105,7 +105,7 @@ const Navbar = () => {
               to="/"
               className="text-4xl select-none font-black tracking-tighter"
             >
-              <span>WorkDayIndia</span>
+              <span>रोजगार भारत</span>
               <span className="text-primary">.</span>
             </Link>
           </div>
