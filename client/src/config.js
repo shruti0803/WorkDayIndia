@@ -1,6 +1,6 @@
 import axios from "axios";
 export const Axios = axios.create({
-  baseURL: "https://cyan-sheep-belt.cyclic.app",
+  baseURL: "http://localhost:8000",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",

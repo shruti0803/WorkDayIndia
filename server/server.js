@@ -31,7 +31,7 @@ const connectMongodb = async () => {
 
 app.use(
   cors({
-    origin: ["http://localhost:8080"],
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );
