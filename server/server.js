@@ -11,17 +11,18 @@ import authRoute from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
-console.log(process.env.MONGO);
-
-const app = express();
 dotenv.config();
+console.log(process.env.MONGO);
+const app = express();
 mongoose.set("strictQuery", true);
 
 const connectMongodb = async () => {
+
   try {
-    await mongoose.connect(process.env.MONGO, {
+    await mongoose.connect("mongodb+srv://testing123:sihtesting@freelancing-website.b8a5f.mongodb.net/?retryWrites=true&w=majority&appName=Freelancing-Website", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+
     });
     console.log("Connected Successfully!");
   } catch (error) {
@@ -31,7 +32,7 @@ const connectMongodb = async () => {
 
 app.use(
   cors({
-    origin: ["http://localhost:8080"],
+    origin:"http://localhost:5173",
     credentials: true,
   })
 );
