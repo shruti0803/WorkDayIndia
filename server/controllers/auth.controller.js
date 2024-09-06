@@ -19,7 +19,7 @@ export const register = async (req, res, next) => {
 };
 
 export const login = async (req, res, next) => {
-  console.log("Hi bhai");
+  console.log("in the login part");
   try {
     const user = await User.findOne({ username: req.body.username });
     if (!user) return next(createError(404, "User not found!"));
