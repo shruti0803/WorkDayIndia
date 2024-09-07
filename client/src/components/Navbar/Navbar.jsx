@@ -118,7 +118,7 @@ const Navbar = () => {
               <span>
                 <TfiWorld />
               </span>
-              English
+              हिन्दी
             </div>
             <span className="hidden lg:flex items-center gap-2 cursor-pointer">
               <span>
@@ -127,7 +127,7 @@ const Navbar = () => {
               INR
             </span>
             {!authUser?.isSeller && (
-              <p className="cursor-pointer hidden lg:flex">Become a Seller</p>
+              <p className="cursor-pointer hidden lg:flex">Freelancer</p>
             )}
             {authUser ? (
               <>
