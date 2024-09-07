@@ -22,6 +22,7 @@ const Register = () => {
     img: null,
     country: "",
     isSeller: false,
+    isClient:false,
     desc: "",
   };
   const onSubmit = async (payload, actions) => {
@@ -76,6 +77,8 @@ const Register = () => {
   const getError = (key) => {
     return touched[key] && errors[key];
   };
+
+ 
 
   function handleImageChange(event) {
     const file = event.currentTarget.files[0];
@@ -158,11 +161,10 @@ const Register = () => {
                   className="hidden"
                 />
                 <div
-                  className={`flex justify-center items-center flex-col gap-3 w-full border h-[136px] rounded-md text-sm text-gray-600 ${
-                    touched.img && errors.img
+                  className={`flex justify-center items-center flex-col gap-3 w-full border h-[136px] rounded-md text-sm text-gray-600 ${touched.img && errors.img
                       ? "border-red-500"
                       : "border-gray-300"
-                  }`}
+                    }`}
                 >
                   {values?.img?.type?.startsWith("image/") ? (
                     <label
@@ -226,7 +228,7 @@ const Register = () => {
               <div className="w-full mt-8">
                 <label className="flex items-center justify-start w-full relative gap-4">
                   <span className="text-[#5D6771] text-[15px] leading-5 font-medium flex items-center justify-center select-none">
-                    Activate the seller account
+                    Freelancer
                   </span>
                   <span className="flex items-center justify-center select-none action">
                     <input
@@ -238,7 +240,27 @@ const Register = () => {
                     />
                     <i className="bg-[#c5c7c9] relative w-11 h-6 rounded-xl transition-all duration-200 before:content-[''] before:absolute before:top-[2px] before:left-[2.8px] before:w-5 before:h-5 before:bg-white before:rounded-full before:shadow-newLongShadow before:transition-all before:duration-300 cursor-pointer"></i>
                   </span>
+
+                  <span className="text-[#5D6771] text-[15px] leading-5 font-medium flex items-center justify-center select-none">
+                    Client
+                  </span>
+                  <span className="flex items-center justify-center select-none action">
+                    <input
+                      type="checkbox"
+                      className="appearance-none"
+                      value={values.isClient}
+                      onChange={handleChange}
+                      name="isClient"
+                    />
+                    <i className="bg-[#c5c7c9] relative w-11 h-6 rounded-xl transition-all duration-200 before:content-[''] before:absolute before:top-[2px] before:left-[2.8px] before:w-5 before:h-5 before:bg-white before:rounded-full before:shadow-newLongShadow before:transition-all before:duration-300 cursor-pointer"></i>
+                  </span>
+
+
+
+
+
                 </label>
+
               </div>
               <CustomizeInput
                 showLabel={false}
