@@ -10,7 +10,7 @@ import image9 from "../assets/images/slide9.png";
 import image10 from "../assets/images/slide10.png";
 import image11 from "../assets/images/slide1.png";
 import marketIcon1 from "../assets/icons/market1.svg";
-import marketIcon2 from "../assets/icons/market2.svg";
+import marketIcon2 from "../assets/icons/market2.png";
 import marketIcon3 from "../assets/icons/market3.svg";
 import marketIcon4 from "../assets/icons/market4.svg";
 import marketIcon5 from "../assets/icons/market5.svg";
@@ -27,6 +27,11 @@ import card1img from "../assets/images/card1img.png";
 import card2img from "../assets/images/card2img.png";
 import card3img from "../assets/images/card3img.png";
 import card4img from "../assets/images/card4img.png";
+import testi1 from "../assets/images/Testi1.png";
+import testi2 from "../assets/images/Testi2.jpg";
+import testi3 from "../assets/images/Testi3.jpg";
+import testi4 from "../assets/images/Testi4.jpg";
+import testi5 from "../assets/images/Testi5.jpg";
 export const cards = [
   {
     id: "001",
@@ -361,22 +366,27 @@ export const testimonyData = [
   {
     title: "Pankaj Sharma, Sharma Kirana Store",
     details: `"हम हमेशा से अपनी दुकान ऑनलाइन लाना चाहते थे। रोजगार भारत ने हमें यह करने में मदद की।"`,
+    uimg:testi1,
 },
 {
     title: "Rajesh Verma, Verma Electric Works",
     details: `"जब हमें अपने बिजनेस को बड़ा करना था, रोजगार भारत ने हमें सही दिशा दी।"`,
+    uimg:testi2,
 },
 {
     title: "Simran Kaur, Simran Boutique",
     details: `"ऑनलाइन प्लेटफॉर्म से जुड़कर हमें नए ग्राहकों तक पहुंचने में मदद मिली है, और इसका श्रेय रोजगार भारत को जाता है।"`,
+    uimg:testi3,
 },
 {
     title: "Vinod Yadav, Yadav Dairy",
     details: `"हमारे दूध उत्पादों को अधिकतम लोगों तक पहुंचाने में रोजगार भारत ने बहुत मदद की है।"`,
+    uimg:testi4,
 },
 {
     title: "Anjali Singh, Singh Handicrafts",
     details: `"कला और शिल्प को ऑनलाइन बेचने का सपना अब साकार हो रहा है, धन्यवाद रोजगार भारत!"`,
+    uimg:testi5,
 },
 ];
 export const footerLinks = [
