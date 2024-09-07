@@ -14,6 +14,7 @@ import upload from "../../libs/upload";
 const Register = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
+
   const initialValues = {
     username: "",
     email: "",
@@ -22,8 +23,10 @@ const Register = () => {
     img: null,
     country: "",
     isSeller: false,
+    isClient: false, // Added isClient to the initial values
     desc: "",
   };
+
   const onSubmit = async (payload, actions) => {
     setLoading(true);
     const url = await upload(values.img);
@@ -85,6 +88,14 @@ const Register = () => {
       return;
     }
     setFieldValue("img", file);
+  }
+
+  function handleClientChange(e) {
+    setFieldValue("isClient", e.target.checked);
+  }
+
+  function handleSellerChange(e) {
+    setFieldValue("isSeller", e.target.checked);
   }
 
   return (
@@ -192,7 +203,7 @@ const Register = () => {
               <CustomizeInput
                 showLabel={false}
                 htmlFor="country"
-                label="country"
+                label="Country"
                 labelClassName="text-sm font-medium text-darkColor"
                 type="text"
                 name="country"
@@ -221,25 +232,47 @@ const Register = () => {
             </div>
             <div className="flex items-start justify-start flex-col gap-4 w-full sm:flex-1">
               <h1 className="text-2xl text-darkColor font-semibold">
-                I want to be a seller
+                I want to be registered as:
               </h1>
+
+              <div className="flex gap-10"> 
               <div className="w-full mt-8">
                 <label className="flex items-center justify-start w-full relative gap-4">
                   <span className="text-[#5D6771] text-[15px] leading-5 font-medium flex items-center justify-center select-none">
-                    Activate the seller account
+                    Freelancer Account
                   </span>
                   <span className="flex items-center justify-center select-none action">
                     <input
                       type="checkbox"
                       className="appearance-none"
-                      value={values.isSeller}
-                      onChange={handleChange}
+                      checked={values.isSeller}
+                      onChange={handleSellerChange}
                       name="isSeller"
                     />
                     <i className="bg-[#c5c7c9] relative w-11 h-6 rounded-xl transition-all duration-200 before:content-[''] before:absolute before:top-[2px] before:left-[2.8px] before:w-5 before:h-5 before:bg-white before:rounded-full before:shadow-newLongShadow before:transition-all before:duration-300 cursor-pointer"></i>
                   </span>
                 </label>
               </div>
+              
+              <div className="w-full mt-8">
+                <label className="flex items-center justify-start w-full relative gap-4">
+                  <span className="text-[#5D6771] text-[15px] leading-5 font-medium flex items-center justify-center select-none">
+                    Client Account
+                  </span>
+                  <span className="flex items-center justify-center select-none action">
+                    <input
+                      type="checkbox"
+                      className="appearance-none"
+                      checked={values.isClient}
+                      onChange={handleClientChange}
+                      name="isClient"
+                    />
+                    <i className="bg-[#c5c7c9] relative w-11 h-6 rounded-xl transition-all duration-200 before:content-[''] before:absolute before:top-[2px] before:left-[2.8px] before:w-5 before:h-5 before:bg-white before:rounded-full before:shadow-newLongShadow before:transition-all before:duration-300 cursor-pointer"></i>
+                  </span>
+                </label>
+              </div>
+              </div>
+            
               <CustomizeInput
                 showLabel={false}
                 containerClass="my-2"

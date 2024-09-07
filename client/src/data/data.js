@@ -277,12 +277,12 @@ export const featureData = [
   {
     title: "Quality work done quickly",
     detail:
-      "Find the right freelancer to begin working on your project within minutes.",
+      "Select the right freelancer and start your project within minutes with our AI Recommendation System",
   },
   {
     title: "Protected payments, every time",
     detail:
-      "Always know what you'll pay upfront. Your payment isn't released until you approve the work.",
+      "With UPI and other secure payment options, always know your costs upfront. Your payment is safely held until you approve the completed work.",
   },
   {
     title: "24/7 support",
@@ -525,7 +525,7 @@ export const footerLinks = [
       },
       {
         to: "/",
-        text: "Become a Seller",
+        text: "Become a Freelancer",
       },
       {
         to: "/",
