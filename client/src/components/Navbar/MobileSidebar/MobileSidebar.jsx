@@ -86,7 +86,7 @@ const MobileSidebar = ({ show, setShow, setLoginModal }) => {
             Home
           </p>
           <p className="cursor-pointer text-gray-400 text-base font-medium flex items-center justify-start gap-2">
-            English
+            Hindi
             <span>
               <TfiWorld />
             </span>

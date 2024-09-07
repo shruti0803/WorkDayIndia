@@ -118,7 +118,7 @@ const Navbar = () => {
               <span>
                 <TfiWorld />
               </span>
-              English
+              Hindi
             </div>
             <span className="hidden lg:flex items-center gap-2 cursor-pointer">
               <span>

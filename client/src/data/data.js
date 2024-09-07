@@ -356,17 +356,25 @@ export const businessData = [
 
 export const testimonyData = [
   {
-    title: "Tim and Dan Joo, Co-Founder",
-    details: `"When you want to create a business bigger than yourself, you need a lot of help. That's what Fiverr does."`,
-  },
-  {
-    title: "Tim and Dan Joo, Co-Founder",
-    details: `"When you want to create a business bigger than yourself, you need a lot of help. That's what Fiverr does."`,
-  },
-  {
-    title: "Tim and Dan Joo, Co-Founder",
-    details: `"When you want to create a business bigger than yourself, you need a lot of help. That's what Fiverr does."`,
-  },
+    title: "Pankaj Sharma, Sharma Kirana Store",
+    details: `"हम हमेशा से अपनी दुकान ऑनलाइन लाना चाहते थे। रोजगार भारत ने हमें यह करने में मदद की।"`,
+},
+{
+    title: "Rajesh Verma, Verma Electric Works",
+    details: `"जब हमें अपने बिजनेस को बड़ा करना था, रोजगार भारत ने हमें सही दिशा दी।"`,
+},
+{
+    title: "Simran Kaur, Simran Boutique",
+    details: `"ऑनलाइन प्लेटफॉर्म से जुड़कर हमें नए ग्राहकों तक पहुंचने में मदद मिली है, और इसका श्रेय रोजगार भारत को जाता है।"`,
+},
+{
+    title: "Vinod Yadav, Yadav Dairy",
+    details: `"हमारे दूध उत्पादों को अधिकतम लोगों तक पहुंचाने में रोजगार भारत ने बहुत मदद की है।"`,
+},
+{
+    title: "Anjali Singh, Singh Handicrafts",
+    details: `"कला और शिल्प को ऑनलाइन बेचने का सपना अब साकार हो रहा है, धन्यवाद रोजगार भारत!"`,
+},
 ];
 export const footerLinks = [
   {
