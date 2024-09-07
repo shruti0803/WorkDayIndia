@@ -4,10 +4,13 @@ import { buttons } from "../../../data/data";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
-import image1 from "../../../assets/images/hero1.png";
-import image2 from "../../../assets/images/hero2.png";
-import image3 from "../../../assets/images/hero3.png";
-import image4 from "../../../assets/images/hero4.png";
+import image1 from "../../../assets/images/img1.png";
+import image2 from "../../../assets/images/img2.png";
+import image3 from "../../../assets/images/img3.png";
+import image4 from "../../../assets/images/hero1.png";
+import image5 from "../../../assets/images/hero2.png";
+// import image6 from "../../../assets/images/hero4.png";
+
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -32,14 +35,14 @@ const Hero = () => {
       onSubmit,
     });
 
-  const changeImage = [image1, image2, image3, image4];
+  const changeImage = [image1, image2, image3, image4,image5];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === changeImage.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, []);
