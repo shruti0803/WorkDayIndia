@@ -23,7 +23,6 @@ const Register = () => {
     img: null,
     country: "",
     isSeller: false,
-    isClient: false, // Added isClient to the initial values
     desc: "",
   };
 
@@ -79,6 +78,8 @@ const Register = () => {
   const getError = (key) => {
     return touched[key] && errors[key];
   };
+
+ 
 
   function handleImageChange(event) {
     const file = event.currentTarget.files[0];
@@ -169,11 +170,10 @@ const Register = () => {
                   className="hidden"
                 />
                 <div
-                  className={`flex justify-center items-center flex-col gap-3 w-full border h-[136px] rounded-md text-sm text-gray-600 ${
-                    touched.img && errors.img
+                  className={`flex justify-center items-center flex-col gap-3 w-full border h-[136px] rounded-md text-sm text-gray-600 ${touched.img && errors.img
                       ? "border-red-500"
                       : "border-gray-300"
-                  }`}
+                    }`}
                 >
                   {values?.img?.type?.startsWith("image/") ? (
                     <label
@@ -251,7 +251,15 @@ const Register = () => {
                     />
                     <i className="bg-[#c5c7c9] relative w-11 h-6 rounded-xl transition-all duration-200 before:content-[''] before:absolute before:top-[2px] before:left-[2.8px] before:w-5 before:h-5 before:bg-white before:rounded-full before:shadow-newLongShadow before:transition-all before:duration-300 cursor-pointer"></i>
                   </span>
+
+                 
+
+
+
+
+
                 </label>
+
               </div>
               
               <div className="w-full mt-8">
