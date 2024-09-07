@@ -488,11 +488,7 @@ export const footerLinks = [
       },
       {
         to: "/",
-        text: "Selling on Fiverr",
-      },
-      {
-        to: "/",
-        text: "Buying on Fiverr",
+        text: "Buying on रोजगार भारत",
       },
     ],
   },
@@ -548,23 +544,15 @@ export const footerLinks = [
   },
   {
     id: "more",
-    title: "More From Fiverr",
+    title: "More From रोजगार भारत",
     links: [
       {
         to: "/",
-        text: "Fiverr Business",
+        text: "रोजगार भारत Business",
       },
       {
         to: "/",
-        text: "Fiverr Pro",
-      },
-      {
-        to: "/",
-        text: "Fiverr Logo Maker",
-      },
-      {
-        to: "/",
-        text: "Fiverr Guides",
+        text: "रोजगार भारत Guides",
       },
       {
         to: "/",
@@ -572,15 +560,11 @@ export const footerLinks = [
       },
       {
         to: "/",
-        text: "Fiverr Select",
-      },
-      {
-        to: "/",
         text: "ClearVoice",
       },
       {
         to: "/",
-        text: "Fiverr Workspace",
+        text: "रोजगार भारत Workspace",
       },
       {
         to: "/",
