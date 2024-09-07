@@ -105,8 +105,8 @@ const Navbar = () => {
               to="/"
               className="text-4xl select-none font-black tracking-tighter"
             >
-              <span>रोजगार भारत</span>
-              <span className="text-primary"></span>
+              <span>रोजगार </span>
+              <span className="text-primary ">भारत</span>
             </Link>
           </div>
           <nav className="flex items-center justify-end gap-7 font-medium text-base">
