@@ -19,7 +19,14 @@ import marketIcon7 from "../assets/icons/market7.svg";
 import marketIcon8 from "../assets/icons/market8.svg";
 import marketIcon9 from "../assets/icons/market9.svg";
 import marketIcon10 from "../assets/icons/market10.svg";
-
+import card1 from "../assets/images/card1.jpg";
+import card2 from "../assets/images/card2.jpg";
+import card3 from "../assets/images/card3.jpg";
+import card4 from "../assets/images/card4.jpg";
+import card1img from "../assets/images/card1img.png";
+import card2img from "../assets/images/card2img.png";
+import card3img from "../assets/images/card3img.png";
+import card4img from "../assets/images/card4img.png";
 export const cards = [
   {
     id: "001",
@@ -92,36 +99,32 @@ export const cards = [
 export const projectsCards = [
   {
     id: "001",
-    title: "Package Design",
-    description: "by passionshake",
-    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_2.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615068/mijalzagier.png",
-    userImg:
-      "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/58960b09956dc710d2d5a33573261936-1554984111113/750ccab0-8a64-4c91-b9a4-d10039dbf79c.jpg",
+    title: "Wedding Card Design",
+    description: "by Manishka Gupta",
+    img: card1,
+    userImg: card1img,
   },
   {
     id: "002",
-    title: "Product Photography",
-    description: "by passionshake",
-    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_2.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615096/passionshake.jpeg",
-    userImg:
-      "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/ad68f554913d9d326d611e604ef79b0b-1608722734146/74e5ab33-a5fc-40ae-9cee-a91b23e80237.jpg",
-  },
+    title: "Portraits & Caricatures",
+    description: "by Shruti Chaurasia",
+    img:card2,
+    userImg: card2img,
+    },
   {
     id: "003",
-    title: "Portraits & Caricatures",
-    description: "by noneyn",
-    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_2.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615069/noneyn.png",
-    userImg:
-      "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/23b01eca3b78e2869e149efe15d3066a-1613424545655/0aaffa8e-01e0-4dcb-b56d-674e9b9c4bf5.jpg",
-  },
+    title: "Mobile App Development",
+    description: "by Prabal Pratap",
+    img:card3,
+    userImg: card3img,
+    },
   {
     id: "004",
-    title: "Book Design",
-    description: "by annapletrangeli",
-    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_2.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615063/annapietrangeli.jpeg",
-    userImg:
-      "https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/8b60be1bf2915ddc1d551eaa252684d7-1589020928117/1d531e54-7607-4bdb-815f-088dbc0fb971.jpg",
-  },
+    title: "Script Writing",
+    description: "by Achyuta Gupta",
+    img:card4,
+    userImg: card4img,
+    },
   {
     id: "005",
     title: "Fylers Design",
