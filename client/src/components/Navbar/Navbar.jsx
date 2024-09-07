@@ -127,7 +127,7 @@ const Navbar = () => {
               INR
             </span>
             {!authUser?.isSeller && (
-              <p className="cursor-pointer hidden lg:flex">Become a Seller</p>
+              <p className="cursor-pointer hidden lg:flex">Become a Freelancer</p>
             )}
             {authUser ? (
               <>
